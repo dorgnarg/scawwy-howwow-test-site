@@ -19,11 +19,11 @@ A surreal horror audio drama/podcast
 <body><header>
 <nav class="navbar is-fixed-top is-black is-spaced" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item spooky" href="/"></a>
+    <a class="navbar-item spooky" href="/" aria-label="home"></a>
 
     <a role="button" class="navbar-burger burger" aria-label="menu"
-      aria-expanded="false" data-target="nav-bar" id="burger"
-                                                  onClick="toggle()">
+      aria-expanded="false" data-target="nav-bar" id="burger" tabindex=0
+                            href="javascript:void(0);" onClick="toggle()">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -57,19 +57,22 @@ A surreal horror audio drama/podcast
     </div>
     <div class="navbar-end">
       
-      <a href="https://facebook.com/scawwyhowwowtheatre/" class="navbar-item is-hidden-touch navbar-item-main">
+      <a href="https://facebook.com/scawwyhowwowtheatre/" class="navbar-item is-hidden-touch navbar-item-main"
+                           title="Facebook" aria-label="Facebook">
         <span class="icon">
           <i class='fab fa-facebook'></i>
         </span>
       </a>
       
-      <a href="https://instagram.com/scawwyhowwowtheatre/" class="navbar-item is-hidden-touch navbar-item-main">
+      <a href="https://instagram.com/scawwyhowwowtheatre/" class="navbar-item is-hidden-touch navbar-item-main"
+                           title="Instagram" aria-label="Instagram">
         <span class="icon">
           <i class='fab fa-instagram'></i>
         </span>
       </a>
       
-      <a href="https://twitter.com/unredpod" class="navbar-item is-hidden-touch navbar-item-main">
+      <a href="https://twitter.com/unredpod" class="navbar-item is-hidden-touch navbar-item-main"
+                           title="Twitter" aria-label="Twitter">
         <span class="icon">
           <i class='fab fa-twitter'></i>
         </span>
@@ -103,7 +106,8 @@ function toggle() {
                 <source media="(min-width: 1400px)" srcset="/tales-768px.jpg">
                 <source media="(max-width: 480px)" srcset="/tales-480px.jpg">
                 <source media="(max-width: 375px)" srcset="/tales-375px.jpg">
-                <img src="/tales-768px.jpg">
+                <img loading="lazy" src="/tales-768px.jpg"
+                                    alt="Tales from the Visa Line, An online charity theatre festival benefiting the International Refugee Assistance Project">
             </picture>
         </div>
         <div class="card-content">
@@ -125,7 +129,8 @@ function toggle() {
                 <source media="(min-width: 1400px)" srcset="/untitled-768px.jpg">
                 <source media="(max-width: 480px)" srcset="/untitled-480px.jpg">
                 <source media="(max-width: 375px)" srcset="/untitled-375px.jpg">
-                <img src="/untitled-768px.jpg">
+                <img loading="lazy" src="/untitled-768px.jpg"
+                                    alt="untitled [redacted], A surreal horror audio drama/podcast">
             </picture>
         </div>
         <div class="card-content">

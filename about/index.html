@@ -20,11 +20,11 @@ Creative Director
 <body><header>
 <nav class="navbar is-fixed-top is-black is-spaced" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item spooky" href="/"></a>
+    <a class="navbar-item spooky" href="/" aria-label="home"></a>
 
     <a role="button" class="navbar-burger burger" aria-label="menu"
-      aria-expanded="false" data-target="nav-bar" id="burger"
-                                                  onClick="toggle()">
+      aria-expanded="false" data-target="nav-bar" id="burger" tabindex=0
+                            href="javascript:void(0);" onClick="toggle()">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -58,19 +58,22 @@ Creative Director
     </div>
     <div class="navbar-end">
       
-      <a href="https://facebook.com/scawwyhowwowtheatre/" class="navbar-item is-hidden-touch navbar-item-main">
+      <a href="https://facebook.com/scawwyhowwowtheatre/" class="navbar-item is-hidden-touch navbar-item-main"
+                           title="Facebook" aria-label="Facebook">
         <span class="icon">
           <i class='fab fa-facebook'></i>
         </span>
       </a>
       
-      <a href="https://instagram.com/scawwyhowwowtheatre/" class="navbar-item is-hidden-touch navbar-item-main">
+      <a href="https://instagram.com/scawwyhowwowtheatre/" class="navbar-item is-hidden-touch navbar-item-main"
+                           title="Instagram" aria-label="Instagram">
         <span class="icon">
           <i class='fab fa-instagram'></i>
         </span>
       </a>
       
-      <a href="https://twitter.com/unredpod" class="navbar-item is-hidden-touch navbar-item-main">
+      <a href="https://twitter.com/unredpod" class="navbar-item is-hidden-touch navbar-item-main"
+                           title="Twitter" aria-label="Twitter">
         <span class="icon">
           <i class='fab fa-twitter'></i>
         </span>
@@ -108,7 +111,8 @@ For inquiries, reach us at
                 <source media="(min-width: 1400px)" srcset="/nicholas-768px.jpg">
                 <source media="(max-width: 480px)" srcset="/nicholas-480px.jpg">
                 <source media="(max-width: 375px)" srcset="/nicholas-375px.jpg">
-                <img src="/nicholas-768px.jpg">
+                <img loading="lazy" src="/nicholas-768px.jpg"
+                                    alt="Nicholas Tran, Executive Director">
             </picture>
         </div>
         <div class="card-content">
@@ -126,7 +130,8 @@ For inquiries, reach us at
                 <source media="(min-width: 1400px)" srcset="/daniel-768px.jpg">
                 <source media="(max-width: 480px)" srcset="/daniel-480px.jpg">
                 <source media="(max-width: 375px)" srcset="/daniel-375px.jpg">
-                <img src="/daniel-768px.jpg">
+                <img loading="lazy" src="/daniel-768px.jpg"
+                                    alt="Daniel Moore, Creative Director">
             </picture>
         </div>
         <div class="card-content">
@@ -144,7 +149,8 @@ For inquiries, reach us at
                 <source media="(min-width: 1400px)" srcset="/subin-768px.jpg">
                 <source media="(max-width: 480px)" srcset="/subin-480px.jpg">
                 <source media="(max-width: 375px)" srcset="/subin-375px.jpg">
-                <img src="/subin-768px.jpg">
+                <img loading="lazy" src="/subin-768px.jpg"
+                                    alt="Subin Ahn, Artistic Director">
             </picture>
         </div>
         <div class="card-content">
